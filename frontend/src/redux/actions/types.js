@@ -1,0 +1,5 @@
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
+export const AUTH_LOGOUT = "AUTH_LOGOUT";
+
+export const UPDATE_USER = "UPDATE_USER";
