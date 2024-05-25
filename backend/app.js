@@ -13,8 +13,8 @@ const { port } = config;
 // app.use(morgan(":url :body"));
 app.use(cors());
 
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use("/api", indexRouter);
 

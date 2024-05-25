@@ -58,7 +58,7 @@ exports.createSubmission = async (req, res) => {
         const results = [];
         for (const testCase of testCases) {
             const result = await runTest(submission, testCase);
-            results.push(result);
+            results.push({ ...result, test_case_id: testCase.id, submission_id: submission.id });
         }
         await SubmissionResult.insertMany(results);
 
